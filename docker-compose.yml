@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: automec-web
     ports:
-      # Maps port 80 of the host VPS to port 80 of the Nginx container.
+      # Maps port 8082 of the host VPS to port 80 of the Nginx container.
       # You can change the host port (e.g. "8080:80") if you use a reverse proxy like Nginx or Traefik.
-      - "80:80"
+      - "8082:80"
     restart: unless-stopped
